@@ -1,9 +1,35 @@
 ---
 import Layout from "../layouts/Main.astro";
 const title = "Astro Static";
-const headline = "Hello Astro static!";
+const headline = "Hello I am Ann!";
 ---
 
 <Layout title={title}>
-  <h1>{headline}</h1>
+  <div class="flex flex-col justify-evenly h-screen">
+    <div class="flex items-center justify-center">
+      <img
+        src="../../public/images/logo-static.png"
+        alt="Big logo"
+        height="600px"
+        width="600px"
+      />
+    </div>
+    <h1 class="text-center font-mono font-semibold text-2xl dark:text-white">{headline}</h1>
+    <div class="flex justify-around items-center items-end">
+      <div class="mt-8">
+        <button
+          class="dark:bg-orange-400 border rounded p-4 drop-shadow-lx border-zinc-900 bg-zinc-900 text-white"
+        >
+          Go to <a href="/about">About</a>
+        </button>
+      </div>
+      <div class="mt-8">
+        <button
+          class="dark:bg-orange-400 border rounded p-4 drop-shadow-lx border-zinc-900 bg-zinc-900 text-white"
+        >
+          Go to <a href="/solution">Solution</a>
+        </button>
+      </div>
+    </div>
+  </div>
 </Layout>

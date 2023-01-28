@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Main.astro";
+const headline = "Hello About page!";
+const title = "Astro Static";
+---
+
+<Layout title={title}>
+  <h1>{headline}</h1>
+  <div class="flex justify-around items-center">
+    <div class="">
+      <p>Go <a href="/">back</a></p>
+    </div>
+    <div class="">
+      <p>Go to <a href="/solution">Solution</a></p>
+    </div>
+  </div>
+</Layout>
